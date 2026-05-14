@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --bg-principal: #383838;
+    --bg-secundario: #000000;
+    --texto-principal: #FFFFFF;
+    --cor-principal: #EE633C;
+    --cor-basica: #9B9B9B;
+    --cor-clara: #A6A3A3;
+    --texto-secundario: #C25C40;
+}
+
+body{
+    font-family: Onest;
+}
+
+header{
+    background-color: var(--bg-principal);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: var(--texto-principal);
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+header .img{
+    width: 100px;
+    margin-left: 30px;
+
+}
+
+header nav a img{
+    width: 60px;
+    margin-left: 20px;
+}
+
+main{
+    background-color: var(--bg-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dados-gerais{
+    background-color: var(--bg-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 80px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    gap: 30px;
+    height: 700px;
+}
+
+.tipo{
+    color: var(--bg-secundario);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.elemento{
+    color: var(--texto-secundario);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.dados-gerais h3{
+    color: var(--cor-principal);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.6em;
+}
+
+.dados-pessoais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-basica);
+    width: 80%;
+    border-radius: 20px;
+    height: 150px;
+    gap: 20px;
+}
+
+.textos{
+    display: flex;
+    flex-direction: row;
+}
+
+.dados-adicionais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-basica);
+    width: 80%;
+    border-radius: 20px;
+    height: 200px;
+    gap: 20px;
+}
+
+.identificacao{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.identificacao h3{
+    color: var(--texto-principal);
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.identificacao h2{
+    color: var(--cor-principal);
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--bg-principal);
+    width: 90%;
+    height: 200px;
+}
+
+.botao{
+    background-color: var(--cor-principal);
+    padding: 20px;
+    color: var(--texto-principal);
+    font-weight: bolder;
+    font-size: 1.2em;
+    border-radius: 70px;
+    margin: 30px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    width: 100%;
+    background-color: #383838;
+    font-size: 18;
+    justify-content: space-between;
+}
+footer p{
+    margin-top: 30px;
+    max-width: 25%;
+    color: white;
+    font-family: Onest, sans-serif;
+}
+
+@media (max-width: 769px){
+    footer p{
+        font-size: 0.6em;
+    }
+
+    footer{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 426px){
+    .tipo{
+        font-size: 1em;
+    }
+
+    .elemento{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 376px){
+    footer p{
+        font-size: 0.4em;
+    }
+}
+
+@media (max-width: 321px){
+    .fotop{
+        padding: 0;
+    }
+
+    .tipo{
+        font-size: 0.8em;
+    }
+
+    .elemento{
+        font-size: 0.8em;
+    }
+
+    .titulo h3{
+        font-size: 1.2em;
+    }
+
+    .titulo h2{
+        font-size: 1.2em;
+    }
+}

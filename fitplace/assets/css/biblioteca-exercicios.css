@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Onest', Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 70px;
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo img {
+    margin-left: -40px;
+    width: 105px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu a {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.perfil {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    background-color: #b8b8b8;
+}
+
+.conteudo {
+    padding: 38px 30px 20px 30px;
+}
+
+.area-exercicios {
+    background-color: #4a4a4a;
+    border-radius: 8px;
+    padding: 18px 18px 25px 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.lista-exercicios {
+    width: 70%;
+}
+
+.lista-exercicios h1 {
+    text-align: center;
+    color: #ff6d3a;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.grupo {
+    margin-bottom: 7px;
+}
+
+.grupo h2 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-left: 8px;
+    margin-bottom: 2px;
+}
+
+.linha-exercicio {
+    background-color: #b8b8b8;
+    border-radius: 8px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 10px;
+}
+
+.exercicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #111111;
+    font-weight: 900;
+    font-size: 20px;
+    flex-wrap: nowrap;
+}
+
+.exercicio img {
+    margin-top: -7px;
+}
+
+.banners {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.banners img {
+    width: 70%;
+    height: auto;
+    border-radius: 35px;
+    margin-left: 70px;
+}
+
+.rodape {
+    background-color: #353535;
+    margin-top: 20px;
+    padding: 45px 60px 35px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape img {
+    width: 100px;
+    height: auto;
+}
+
+.texto-rodape {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+@media (max-width: 769px){
+    .banners{
+        display: none;
+    }
+    .lista-exercicios{
+        width: 100%
+    }
+    .menu a{
+        gap: 15px;
+    }
+}
+
+@media (max-width: 426px){
+    .menu{
+        display: none;
+    }
+    .cabecalho{
+        width: 100%;
+    }
+    .area-exercicios{
+        width: 100%;
+        display: flex;
+    }
+    .linha-exercicio{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape{
+        display: none;
+    }
+    .exercicio p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px){
+        .cabecalho{
+        width: 133%;
+        }
+
+}

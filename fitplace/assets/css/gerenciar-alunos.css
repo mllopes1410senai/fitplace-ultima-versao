@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: Onest, sans-serif;
+}
+.cabecalho {
+    width: 100%;
+    height: 70px;
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo img {
+    margin-left: -40px;
+    width: 105px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu a {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.div-principal{
+    background-color: #383838;
+    border-radius: 40px;
+    margin-top: 40px;
+    height: 800px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.div-principal h3{
+    margin-top: 30px;
+    text-align: center;
+    color: #EE633C;
+    font-family: Onest, sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 20px;
+    
+}
+.aluno1{
+    height: 300px;
+    width: 40%;
+    background-color: #A6A3A3;
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 40px;
+    border: 2px rgb(209, 207, 207) solid;
+}
+.aluno1 img{
+    height: 140px;
+    margin-top: 80px;
+}
+.aluno1 p{
+    margin-top: 60px;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 20px;
+}
+.aluno2{
+    height: 300px;
+    width: 40%;
+    background-color: #A6A3A3;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 40px;
+    border: 2px rgb(209, 207, 207) solid;
+}
+.primeira-parte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aluno2 p{
+    margin-top: 60px;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 20px;
+}
+.aluno2 img{
+    height: 140px;
+    margin-top: 80px;
+}
+.segunda-parte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.aluno3{
+    height: 300px;
+    width: 40%;
+    background-color: #A6A3A3;
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 40px;
+    border: 2px rgb(209, 207, 207) solid;
+}
+.aluno3 img{
+    height: 140px;
+    margin-top: 80px;
+}
+.aluno3 p{
+    margin-top: 60px;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 20px;
+}
+.aluno4{
+    height: 300px;
+    width: 40%;
+    background-color: #A6A3A3;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 40px;
+    border: 2px rgb(209, 207, 207) solid;
+}
+.aluno4 p{
+    margin-top: 60px;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 20px;
+}
+.aluno4 img{
+    height: 140px;
+    margin-top: 80px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    width: 100%;
+    background-color: #383838;
+    font-size: 18;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+footer p{
+    margin-top: 30px;
+    max-width: 25%;
+    color: white;
+    font-family: Onest, sans-serif;
+}
+@media (max-width:1024px){
+    .aluno2 p {
+    margin-top: 10px;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 20px;
+}
+.aluno1 p {
+    margin-top: 10px;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 20px;
+}
+.aluno3 p {
+    margin-top: 10px;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 20px;
+}
+.aluno4 p {
+    margin-top: 10px;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 20px;
+}
+
+}
+@media (max-width:768px){
+    footer p {
+    margin-top: 0;
+    max-width: 25%;
+    color: white;
+    font-family: Onest, sans-serif;
+}
+    .aluno2 img {
+    display: none;
+}
+.aluno1 img {
+    display: none;
+}
+.aluno3 img {
+    display: none;
+}
+.aluno4 img {
+    display: none;
+}
+.div-principal p{
+    text-align: center;
+    margin-top: inherit;
+}
+
+}
+@media (max-width:426px){
+    .menu{
+        display: none;
+    }
+    .cabecalho{
+        width: 105%;
+    }
+    .div-principal {
+    background-color: #383838;
+    border-radius: 40px;
+    margin-top: 40px;
+    height: 800px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+.div-principal p {
+    font-size: 11.5px;
+}
+footer{
+    font-size: 11px;
+    width: 105%;
+}
+}
+@media (max-width:376px){
+    .menu{
+        display: none;
+    }
+    .cabecalho{
+        width: 110%;
+    }
+    .div-principal {
+    background-color: #383838;
+    border-radius: 40px;
+    margin-top: 40px;
+    height: 800px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 100%;
+}
+.div-principal p {
+    font-size: 11.5px;
+}
+footer{
+    font-size: 11px;
+    width: 110%;
+}
+.aluno1 .aluno2 .aluno3 .aluno4{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+@media (max-width:321px){
+    .menu{
+        display: none;
+    }
+    .cabecalho{
+        width: 110%;
+    }
+    .div-principal {
+    background-color: #383838;
+    border-radius: 40px;
+    margin-top: 40px;
+    height: 1500px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 100%;
+}
+.div-principal p {
+    font-size: 14.5px;
+}
+footer{
+    font-size: 11px;
+    width: 110%;
+}
+.aluno1{
+    margin-left: 10px;
+     width: 240px;
+
+}
+.aluno2{
+     width: 240px;
+     margin-left: 55px;
+
+}
+.aluno3{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 240px;
+    padding-top: 25px;
+}
+.aluno4{
+    margin-left: 55px;
+     margin-top: 40px;
+    width: 240px;
+
+}
+.primeira-parte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.segunda-parte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+footer p{
+    font-size: 10px;
+}
+}
+
+
+
