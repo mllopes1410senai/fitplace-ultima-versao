@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --bg-principal: #383838;
+    --bg-secundario: #000000;
+    --texto-principal: #FFFFFF;
+    --cor-principal: #EE633C;
+    --cor-basica: #9B9B9B;
+    --cor-clara: #A6A3A3;
+    --texto-secundario: #C25C40;
+}
+
+body{
+    font-family: Onest;
+}
+
+header{
+    background-color: var(--bg-principal);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: var(--texto-principal);
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+header .img{
+    width: 100px;
+    margin-left: 30px;
+
+}
+
+header nav a img{
+    width: 60px;
+    margin-left: 20px;
+}
+
+.banner{
+    background-color: var(--bg-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.banner img{
+    height: 150px;
+}
+
+main{
+    background-color: var(--bg-secundario);
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal h3{
+    text-transform: uppercase;
+    color: var(--texto-principal);
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.principal h4{
+    color: var(--cor-clara);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.principal img{
+    height: 150px;
+}
+
+.quadro{
+    background-color: var(--cor-basica);
+    width: 700px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    margin-top: 40px;
+    border: 2px solid #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.superior img{
+    padding: 0;
+}
+
+.superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 80%;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.juntos{
+    display: flex;
+    flex-direction: row;
+}
+
+.basico{
+    color: var(--texto-principal);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.colorido{
+    color: var(--texto-secundario);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.verde{
+    color: green;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.barra{
+    width: 90%;
+    height: 2px;
+    background-color: var(--texto-principal);
+}
+
+.beneficios h4{
+    color: var(--texto-principal);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 70%;
+}
+
+li{
+    color: var(--texto-principal);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.botao{
+    background-color: var(--cor-principal);
+    padding: 20px;
+    color: var(--texto-principal);
+    font-weight: bolder;
+    font-size: 1.2em;
+    border-radius: 70px;
+    margin: 30px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    width: 100%;
+    background-color: #383838;
+    font-size: 18;
+    justify-content: space-between;
+}
+footer p{
+    margin-top: 30px;
+    max-width: 25%;
+    color: white;
+    font-family: Onest, sans-serif;
+}
+
+@media(max-width: 426px){
+    .quadro{
+    background-color: var(--cor-basica);
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    margin-top: 40px;
+    border: 2px solid #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .superior{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    footer img{
+        width: 50px;
+        height: 50px;
+    }
+
+    footer p{
+        font-size: 0.5em;
+    }
+
+    footer{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    }
+}
+
+@media(max-width:321px){
+    a{
+    color: var(--texto-principal);
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+
+    header{
+        padding-top: 10px;
+    }
+
+    footer p{
+        margin: -20px;
+    }
+}

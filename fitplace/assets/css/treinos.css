@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    background: #2f2f2f;
+    color: white;
+}
+
+header{
+    background-color: var(--bg-principal);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: var(--texto-principal);
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+header .img{
+    width: 100px;
+    margin-left: 30px;
+
+}
+
+header nav a img{
+    width: 60px;
+    margin-left: 20px;
+}
+.banner{
+    width: 100%;
+    height: 350px;
+    background-image:
+    linear-gradient(to top, rgba(47,47,47,1), rgba(0,0,0,0.2)),
+    url("../img/banner.png");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto-banner{
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.texto-banner h1{
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.texto-banner p{
+    color: #ff6a00;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.area-botao{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+}
+
+.area-botao .button{
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.area-botao button:hover{
+    transform: translateY(-3px);
+}
+
+
+section{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+section h2{
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+section h2::after{
+    width: 60px;
+    height: 3px;
+    background: #ff6a00;
+    left: 0;
+    bottom: -8px;
+    border-radius: 10px;
+}
+
+
+
+.cards{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 48%;
+    min-width: 260px;
+    background-color: #252525;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.card:hover{
+    transform: translateY(-6px);
+    border-color: #ff6a00;
+}
+
+.conteudo-card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.conteudo-card img{
+    width: 65px;
+    height: 65px;
+}
+
+.texto-card h3{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.texto-card p{
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+
+.box-desafio{
+    background: #252525;
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 22px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.box-desafio:hover{
+    border-color: #ff6a00;
+    transform: translateY(-4px);
+}
+
+.grafico{
+    background: #252525;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafico img{
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    width: 100%;
+    background-color: #383838;
+    font-size: 18;
+    justify-content: space-between;
+}
+footer p{
+    margin-top: 30px;
+    max-width: 25%;
+    color: white;
+    font-family: Onest, sans-serif;
+}
+
+@media(max-width: 768px){
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .texto-banner h1{
+        font-size: 24px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+    }
+    .conteudo-card{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+    footer p{
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
